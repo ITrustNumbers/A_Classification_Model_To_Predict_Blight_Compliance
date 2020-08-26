@@ -26,6 +26,10 @@
 
 1. **Use Several Data Fields To Extract Model Ready Information :** 
     > 'Disposition' ----> 'Responsible_by' & 'Fine_Waived' <br /> 'Violator_description' ----> 'Len_Description' & 'Count_Violation' <br /> 'VIolator_name' ----> 'Type of violator' <br /> 'Ticket_Issued_date' ----> 'Month_BIn' & 'Ticket_TIme'
+2. **Categorical Data Was Mapped for EDA**
+<br />
+
+![Mapping](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/_Images/maping.png)
     
 ## Exploratory Data Analysis : ([EDA & Feature Selection Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Exploratory%20Data%20Analysis%20%26%20Feature%20Selection.ipynb))
 
@@ -44,3 +48,7 @@
 
 ![Categorical Feature Distribution Over Compliance](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Compliance_Dist_Featue.png)
   
+**3. Co-Relation Visualization :**
+<br />
+
+![Co-Relation Visualization](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Heatmap.png)
