@@ -33,9 +33,7 @@
     
 ## Exploratory Data Analysis : ([EDA & Feature Selection Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Exploratory%20Data%20Analysis%20%26%20Feature%20Selection.ipynb))
 
-> 
-
-**1. Categorical Feature Distribution :**
+### 1. Categorical Feature Distribution :
 <br />
 
 ![Categorical Feature Distribution ](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Categorical_Distribution.png)
@@ -43,13 +41,14 @@
 <br />
 <br />
 
-**2. Categorical Feature Distribution  Over Compliance :**
+### 2. Categorical Feature Distribution  Over Compliance :
 <br />
 
 ![Categorical Feature Distribution Over Compliance](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Compliance_Dist_Featue.png)
+
 <br />
 
-**3. Co-Relation Visualization :**
+### 3. Co-Relation Visualization :
 <br />
 
 ![Co-Relation Visualization](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Heatmap.png)
@@ -59,7 +58,7 @@
 > Two Methods were used for Feature selection Namely, Univariate Selection (Chi-Square Test) & Based on Feature Importance from a Simple Extra Tree Classifier 
 <br />
 
-**1. Univariate Selection (Chi-Square Statistical Test) Score :**
+### 1. Univariate Selection (Chi-Square Statistical Test) Score :
 <br />
 
 ![Univariate Selection](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/FeatureSelection_UnivariateSelection.png)
@@ -67,7 +66,7 @@
 <br />
 <br />
 
-**2. Feature Importance from a Simple Extra Tree Classifier  :**
+### 2. Feature Importance from a Simple Extra Tree Classifier  :
 <br />
 
 ![Feature Importance from a Simple Extra Tree Classifier](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/FeatureSelection_FeatureImportance.png)
@@ -147,4 +146,11 @@
 ![Model Comparison](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Model_Comparison.png)
 <br />
 
-### Finally The Logistic Regression Classifier was Chosen.  
+## Finally The Logistic Regression Classifier was Chosen, As, it is Linear Therefore gives Prediction Faster and it gained the highest AU-ROC Score on the train set
+<br />
+
+## Model Validation : ([Model Validation Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Model%20Validation.ipynb))
+### > The validation Data-Set was used to validate the Final Model, It Was Made Sure That The Validation set was never before seen by the Model during its Training Phase You Can See More On [In This Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Transforming%20Validation%20Data%20to%20Match%20Training%20Data.ipynb) 
+<br />
+
+[Model Validation](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Validation.png)
