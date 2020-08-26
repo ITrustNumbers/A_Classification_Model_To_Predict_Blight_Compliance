@@ -19,7 +19,7 @@ node [shape=box, style="filled", color="black"] ;
 0 -> 2 [labeldistance=2.5, labelangle=-45, headlabel="False"] ;
 7 [label="samples = 4486\nvalue = [3713, 773]\nclass = 0.0", fillcolor="#ea9b62"] ;
 2 -> 7 ;
-8 [label="judgment_amount_N <= 0.118\nsamples = 94830\nvalue = [91481, 3349]\nclass = 0.0", fillcolor="#e68640"] ;
+8 [label="fine_amount_N <= 0.105\nsamples = 94830\nvalue = [91481, 3349]\nclass = 0.0", fillcolor="#e68640"] ;
 2 -> 8 ;
 11 [label="samples = 27806\nvalue = [26316, 1490]\nclass = 0.0", fillcolor="#e68844"] ;
 8 -> 11 ;
