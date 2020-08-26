@@ -150,13 +150,13 @@
 <br />
 
 ## Model Validation : ([Model Validation Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Model%20Validation.ipynb))
-> ### The validation Data-Set was used to validate the Final Model, It Was Made Sure That The Validation set was never before seen by the Model during its Training Phase You Can See More On:  [In This Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Transforming%20Validation%20Data%20to%20Match%20Training%20Data.ipynb) 
+> ### The validation Data-Set was used to validate the Final Model, It Was Made Sure That The Validation set was never seen before to the Model during its Training Phase You Can See More On This Here [In This Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Transforming%20Validation%20Data%20to%20Match%20Training%20Data.ipynb) 
 <br />
 
 ![Model Validation](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Validation.png)
 <br />
 
-## Conclusion :
-### The Final Logistic Regression Model With Parameters :
-> #### C = 100 , Class_Weights = {0 : 0.3 , 1 : 0.7} , max_iter =1000 , penalty = 'l2' , Solver = 'lbfgs' , Dual = False , tol = 0.0001 
-### Gained The Traget AU-ROC Curve Score of >0.8 i.e 0.84 with an Accuracy of 93% on the Validation Data
+# Conclusion :
+## The Final Logistic Regression Model With Parameters :
+> ### C = 100 , Class_Weights = {0 : 0.3 , 1 : 0.7} , max_iter =1000 , penalty = 'l2' , Solver = 'lbfgs' , Dual = False , tol = 0.0001 
+## Gained The Traget AU-ROC Curve Score of >0.8 i.e 0.84 with an Accuracy of 93% on the Validation Data
