@@ -135,7 +135,16 @@
 2. Logistic Regression
 3. Decision Tree
 
+### Final Tuned Tree Visualization :
+<br />
+
+![Tree Visualization](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Tree_Visualization_data.png)
+<br />
+
 ### Comparison of AU-ROC Curve Score for all the Trained and Tunned Models
 <br />
 
 ![Model Comparison](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Model_Comparison.png)
+<br />
+
+### Finally The Logistic Regression Classifier was Chosen.  
