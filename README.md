@@ -2,12 +2,15 @@
 
 ### A Binary Classifier Optimized for maximum Area Under Receiver Operating Characteristic Curve (AU-ROC Curve):
 >  From Data Cleaning to Model Validation, Classifying whether a blight ticket will be paid in time or not, Trained 3 different Classifier on a Highly imbalanced Data provided by Detroit Open Data Portal with around 160000 Tickets.
-# About The Data :
+## About The Data :
 
-### All The data for this project has been gathered through the Detroit Open Data Portal.
+#### All The data for this project has been gathered through the Detroit Open Data Portal.
 
 - *[Detroit Open Data Portal (Blight Violation)](https://data.detroitmi.gov/datasets/blight-violations)*
 
-### Description and More About Data Fields can found Here
+#### Description and More About Data Fields can found Here
  - [Descripton and Data Fields](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/tree/master/Orignal_DataSet)
+ 
+## Data Cleaning :
+> There are not a lot of null values in the data sets therefore, I Simply Dropped the rows with missing data and dropped 'zip_code' Data Field as it was more than 60% missing
 
