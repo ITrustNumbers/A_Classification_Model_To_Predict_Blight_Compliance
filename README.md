@@ -47,8 +47,95 @@
 <br />
 
 ![Categorical Feature Distribution Over Compliance](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Compliance_Dist_Featue.png)
-  
+<br />
+
 **3. Co-Relation Visualization :**
 <br />
 
 ![Co-Relation Visualization](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Heatmap.png)
+
+## Feature Selection : ([EDA & Feature Selection Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Exploratory%20Data%20Analysis%20%26%20Feature%20Selection.ipynb))
+
+> Two Methods were used for Feature selection Namely, Univariate Selection (Chi-Square Test) & Based on Feature Importance from a Simple Extra Tree Classifier 
+<br />
+
+**1. Univariate Selection (Chi-Square Statistical Test) Score :**
+<br />
+
+![Univariate Selection](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/FeatureSelection_UnivariateSelection.png)
+
+<br />
+<br />
+
+**2. Feature Importance from a Simple Extra Tree Classifier  :**
+<br />
+
+![Feature Importance from a Simple Extra Tree Classifier](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/FeatureSelection_FeatureImportance.png)
+
+<br />
+<br />
+
+## Evaluation Metric Selection : ([Model Building Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Model%20Building.ipynb))
+
+#### Confusion Matrix for a Binary Classifier :
+![Confusion Matrix](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/_Images/Confusion_matrix.png)
+
+### 1. Recall ( The True Positive Rate ):
+ 
+# <img src="https://render.githubusercontent.com/render/math?math=Recall=\frac{TP}{TP%2BFN}=TPR">
+
+- The True Positive divided by the sum of the False Negative and the True Positives.
+- TPR describes the proportion of the actual postive samples that were correctly classified as positive, thus we want this value to approach 1.
+<br />
+
+### 2. Specificity ( The False Positive Rate ):
+ 
+# <img src="https://render.githubusercontent.com/render/math?math=FNR=\frac{FP}{FP%2BTN}=Specificity">
+
+- The False positives divided by the sum of the False Positive and the True Negatives.
+- FNR describes the error of the Positive cases, thus we want this value to approach 0.
+<br />
+
+### 3. Receiver Operating Characteristics (ROC) is defined as:
+
+- A comparison of the True Positive Rate and the False Positive Rate.
+
+# <img src="https://render.githubusercontent.com/render/math?math=ROC=\frac{TPR}{FPR}=\frac{\frac{TP}{TP%2BFN}}{\frac{FP}{FP%2BTN}}">
+
+- The goal is to have a ROC close to 1, as this suggests the model is getting a balanced split.
+- The ROC can help guide where the best threshold split might be.
+<br />
+
+### 4. The Area Under the ROC Curve ( AUC ):
+<ul>
+<li>ie, the integral of the <span class="math inline">\(ROC(x)\epsilon D,s.t. D=0\le x\le 1\)</span></li></ul></li>
+
+<br />
+<img src="_Images/AUC.PNG" width="250">
+ 
+<br />
+
+- This provides and aggregated measure of preformance across all thresholds.
+- A general idea as to the overall potential accuracy of a model.
+<br />
+
+### Finally AU-ROC Was Chossen as Evaluation Matrix
+<br />
+
+## Model Building and HyperParameter Tuning : ([Model Building Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Model%20Building.ipynb))
+
+####  This DataSet is Highly Unbalanced thus, I will use 'A Dummy Classifiers' as a baseline for Performance and Evaluation namely:
+
+1. Dummy Classifier (Stratergy = 'Most_Frequent')
+2. Dummy Classifier (Stratergy = 'Unifrom')
+
+####  For The Final Model Building as the Data is very Sparse and Feature Don't Relate with each other that much, I will Fit and Compare 4 Different Models namely:
+
+1. KNN Classifier
+2. Logistic Regression
+3. Decision Tree
+
+### Comparison of AU-ROC Curve Score for all the Trained and Tunned Models
+<br />
+
+![Model Comparison](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Model_Comparison.png)
