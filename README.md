@@ -11,11 +11,36 @@
 #### Description and More About Data Fields can found Here
  - [Descripton and Data Fields](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/tree/master/Orignal_DataSet)
  
-## Data Cleaning :
+## Data Cleaning : ([Data Cleaning & Feature Engineering Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Data%20Cleaning%20and%20Feature%20Engineering.ipynb))
 
 1. **There are not a lot of null values in the data sets therefore, I Simply Dropped the rows with missing data and dropped *'violation_zip_code'* , *'non_us_str_zip_code'* , *'grafitti status'* Data Field as it was more than 60% missing, And i Also Dropped *'payement_date'* , *'collection_status'* Data Field to Avoid Data Leakage.**
 
-- ![Missing Values Plot](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Null_Values.png)
+![Missing Values Plot](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Null_Values.png)
 
+2. **Then, I Combined the lat-lon.csv and addresses.csv Data Set to the train.csv to Map each *ticket_id* to corresponding *Latitude & Longitude*.** 
 
+3. **Cleaned up Some of the Text Based Error in the Data Set and Some Dissimilarities were Handeled**
+     > - E.x : Some Data Fields were Filled with *'Deter'* & *'Determi'* instead of *'Determination'*
 
+## Feature Engineering : ([Data Cleaning & Feature Engineering Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Data%20Cleaning%20and%20Feature%20Engineering.ipynb))
+
+1. **Use Several Data Fields To Extract Model Ready Information :** 
+    > 'Disposition' ----> 'Responsible_by' & 'Fine_Waived' <br /> 'Violator_description' ----> 'Len_Description' & 'Count_Violation' <br /> 'VIolator_name' ----> 'Type of violator' <br /> 'Ticket_Issued_date' ----> 'Month_BIn' & 'Ticket_TIme'
+    
+## Exploratory Data Analysis : ([EDA & Feature Selection Notebook](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Exploratory%20Data%20Analysis%20%26%20Feature%20Selection.ipynb))
+
+> 
+
+**1. Categorical Feature Distribution :**
+<br />
+
+![Categorical Feature Distribution ](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Categorical_Distribution.png)
+
+<br />
+<br />
+
+**2. Categorical Feature Distribution  Over Compliance :**
+<br />
+
+![Categorical Feature Distribution Over Compliance](https://github.com/ITrustNumbers/A_Classification_Model_To_Predict_Blight_Compliance/blob/master/Visualizations/Compliance_Dist_Featue.png)
+  
